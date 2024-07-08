@@ -1,0 +1,73 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #555;
+    transition: background-color 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .drop {
+    animation: fall 0.5s infinite linear;
+  }
+  
+  .size-1 {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .size-2 {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .size-3 {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .size-4 {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .circle {
+    border-radius: 50%;
+  }
+  
+  .square {
+    border-radius: 0%;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid;
+  }
+  
+  @keyframes fall {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
